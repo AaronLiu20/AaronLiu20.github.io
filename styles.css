@@ -1,0 +1,31 @@
+.mainBody {
+    background-color:navy
+}
+
+.title {
+    color:gold;
+    height: auto;
+    margin:0;
+    width:100%;
+    font-size: x-large;
+    text-align: center;
+    text-decoration: none;
+}
+.bar {
+    height: auto;
+    margin: 0;
+    width: 100%;
+    font-size: large;
+    text-align: center;
+    background-color: gold;
+}
+
+.bar a{
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+}
+
+.bar a:hover {
+    color:lightsteelblue;
+}
