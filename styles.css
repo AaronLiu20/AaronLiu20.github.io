@@ -2,6 +2,14 @@
     background-color:navy
 }
 
+.pic-link {
+    height:auto;
+    margin:initial;
+    width:100%;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    background-color:transparent;
+}
 .title {
     color:gold;
     height: auto;
