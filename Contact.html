@@ -7,11 +7,39 @@
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"crossorigin="anonymous">
         <script src="http://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body class = "mainBody">
         <div class = "page">
-            <p class = "bar">
+            <nav class = "bar">
                 <a href ="./index.html" class = "pic-link"> <img src="./images/home.png" alt = "Home"> </a>
-            </p>   
+            </nav> 
         </div>
+        <div>
+            <form id='nameform'>
+                <div class='form-group'>
+                    <label for='fname' class = "title">First Name:</label>
+                    <input id='fname' type='text' class='form-control' required>
+                </div>
+                <div class='form-group'>
+                    <label for='lname' class = "title">Last Name:</label>
+                    <input id='lname' type='text' class='form-control' required>
+                </div>
+                <div class='form-group'>
+                    <label for='email' class = "title">Email Address:</label>
+                    <input id='email' type='text' class='form-control' required>
+                </div>
+                <div class='form-group'>
+                    <label for='user_phone' class = "title">Phone Number:</label>
+                    <input id='user_phone' type='text' class='form-control' required>
+                </div>
+                <div class='form-group'>
+                    <label for='message' class = "title">Message:</label>
+                    <input id='message' type='text' class='form-control' required>
+                </div>
+                <input type='submit' id='go' class='btn btn-danger' value='Send Email'>
+                <div id = confirmation_contact class = "title">
+
+                </div>
+        </div>
+        <script src='./js/index.js'></script>
     </body>
 </html>
