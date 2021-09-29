@@ -1,7 +1,19 @@
-$( document ).ready(function() {
-    $("#go").on( "click", function( event ) {
-      event.preventDefault()
-      $("#confirmation_contact").empty()
-      $("#confirmation_contact").append("We have recieved your message")
-     });  
-   }); 
+async function TopDomain(){
+  console.log("before")
+  let response = fetch('domains.txt')
+    .then(response =>response.text())
+    .then(text => console.log(text))
+  console.log("after")
+}
+
+function compareEmails(topDomains){
+  email = document.getElementById(email)
+
+}
+function clickFunction(event) {
+  event.preventDefault()
+  console.log("Hi Aaron")
+  TopDomain()
+}
+
+document.getElementById('contact-button').onclick = (e) => clickFunction(e)
