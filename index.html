@@ -9,16 +9,70 @@
     <body class = "mainBody">
         <div>
             <nav class = "bar">
-                <a href="https://wenxuanchelsea.github.io" class = "pic-link"><img src="./images/left-arrow.png" alt = "previous"></a>
-                <a href="./aboutMe.html" class = "pic-link"><img src="./images/profile.png" alt = "About me"></a>
-                <a href="https://mattm401.github.io/" class = "pic-link"><img src ="./images/course-page.png" alt = "course-page"></a>
-                <a href="./Contact.html" class = "pic-link"><img src = "./images/contact-me.png" alt = "contact-me"></a>
-                <a href="https://joshualyon7.github.io" class = "pic-link"><img src="./images/right-arrow.png" alt = "right"> </a>
+                <!--this is the start of the dropdown from bootstrap-->
+                <div class="dropdown" style = "align-self: center;">
+                    <button class="btn btn-secondary dropdown-toggle" style ="background-color: #acace6; border-color:black; color:black" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src = "./images/menu.png" alt = "menu" ></img>
+                    </button>
+                    <ul class="dropdown-menu" style = "background-color: #acace6;" aria-labelledby="dropdownMenuButton1">
+                        <li><a class = "dropdown-item" href="https://mattm401.github.io/"> Course-page </a></li>
+                        <li><a class = "dropdown-item" href="https://wenxuanchelsea.github.io"> previous </a></li>
+                        <li><a class = "dropdown-item" href="https://joshualyon7.github.io"> Next </a></li>
+                    </ul>
+                  <!--this is the end of the dropdowm from bootstrap-->
+                </div>
             </nav>
-            <div class = "title">
-                <h1> About me</h1>
-                <p><img src= "./images/me.jpeg" alt = "me"></p>
-                <p> I'm the guy in the blue shirt on the left</p>
+        </div>
+        
+        <div class="card-group" style = "width:90%; margin-left: 5%; padding: 15px;">
+            <div class="card">
+              <img class="card-img-top" src="./images/pic-of-me-and-friends.jpeg" alt="Card image cap">
+              <div class= "custom-card-center">
+                <h5 class="card-title">Me and my friends</h5>
+                <p class="card-text">Me and my freshmen year friends hanging out at a lake during the pandemic. I am the guy in the blue shirt on the right</p>
+              </div>
             </div>
-        </div>      
+            <div class="card">
+              <img class="card-img-top" src="./images/university.jpg" alt="Card image cap">
+              <div class= "custom-card-center">
+                <h5 class="card-title">University</h5>
+                <p class="card-text">I am a unviersity of delaware undergraduate student majoring in computer science concentratiing software engineering</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="./images/Chainmail.jpeg" alt="Card image cap">
+              <div class= "custom-card-center">
+                <h5 class="card-title">Hobbies</h5>
+                <p class="card-text">I like to do the obvious things like playing games and watching videos. but i also like to making customizable chainmail</p>
+              </div>
+            </div>
+        </div>
+        
+        <div class = "title">
+            <h1 class = "custom-divide-bar">
+                Some Projects and <a href="./images/Short-resume.png"> Resume </a>
+            </h1>
+        </div>
+
+        <div>
+            <div class="custom-card-center" style="width: 90%;">
+                <img class="card-img-top" src="./images/calendar.png" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title" style = "text-align: center;">Current Project</h5>
+                <p class="card-text">Another website for your standard calendar. Even thought this project is not the most taxing or complex idea, it helps to reinforce the foundamentals that are needed for the calendar to work properly.</p>
+                <a href="https://aaronliu20.github.io/planner/index.html" class="btn btn-primary">GitHub link</a>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-light text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color:#acace6;">
+              © 2021 Copyright:
+              <a class="text-dark" href="./Contact.html">Contact me</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+        <!--this is the script that allows for the dropdown to work-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
+        <!-- this is the script that allows for the dropdowm to work--> 
     </body>

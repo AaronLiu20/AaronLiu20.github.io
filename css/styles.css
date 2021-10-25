@@ -1,39 +1,89 @@
 .mainBody {
-    background-color:navy
+    background-color: white;
+    overflow-x: hidden;
+    height: 900px
+}
+
+.custom-divide-bar{
+    width: 90%;
+    padding: 1% 1% 1% 1%;
+    margin-left: 5%;
+    background-color: cornflowerblue;
+    border-color: black;
+    text-align: center;
+    align-content: center;
+    border-radius: .5rem;
+}
+
+.custom-card-title {
+    margin-bottom: .75rem;
+    text-align: center;
+}
+
+.custom-card-center{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 90%;
+    word-wrap: break-word;
+    background-color: #3d59ab;
+    background-clip: border-box;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
 }
 
 .pic-link {
     height:auto;
     margin:initial;
-    width:100%;
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
     background-color:transparent;
+    border:none;
 }
+
 .title {
-    color:gold;
+    color:#acace6;
     height: auto;
-    margin:0;
-    width:100%;
-    font-size: x-large;
+    margin: 0px;
+    font-size:35px;
     text-align: center;
     text-decoration: none;
 }
-.bar {
+
+.custom-text{
+    color:white;
     height: auto;
+    margin: 0px;
+    font-size:35px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.custom-column-top-information{
+    flex: 0 auto;
+    width: 33.3333%
+}
+
+.bar {
+    height: 65px;
     margin: 0;
     width: 100%;
     font-size: large;
     text-align: center;
-    background-color: gold;
+    background-color: #acace6;
+    padding: 5px 5px 5px 5px;
 }
 
-.bar a{
+.bar element{
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
     text-decoration: none;
 }
 
 .bar a:hover {
-    color:lightsteelblue;
+    color:black;
+    background-color: var(--purple);
 }

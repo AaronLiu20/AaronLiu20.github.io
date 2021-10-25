@@ -24,8 +24,7 @@ function compareEmails(array){
   let email = document.getElementById('user_email').value
   const secondDomain = email.split("@")
   if(email.split(".").length != 2){return found;}
-  const Domain = email.split(".")[1]
-  const upperDomain = Domain.toUpperCase()
+  const Domain = email.split(".")[1].toUpperCase()
   let i = 0
   for(i = 0; i< array.length; i++){
     if (array[i] === upperDomain){
@@ -43,25 +42,32 @@ function clickFunction(event) {
   event.preventDefault()
   var div = document.getElementById('confirmation_contact')
   while(div.firstChild){div.removeChild(div.firstChild)}
-  div.append( "we need(")
   //this checks every other element needed for the email and tells the user about the missing element
   if(!document.getElementById('user_fname').value){
-    div.append( " ,first name")
+    if(everythingElse){div.append( "we need( first name")}
     everythingElse = false;
   }
   if(!document.getElementById('user_lname').value){
-    div.append( " ,last name")
+    if(everythingElse){div.append( "we need( last name")}
+    else {div.append( " ,last name")}
     everythingElse = false;
   }
   if(!document.getElementById('user_phone').value){
-    div.append( " ,phone number")
+    if(everythingElse){div.append( "we need( a phone number")}
+    else {div.append( " ,phone number")}
+    everythingElse = false;
+  }
+  else if(document.getElementById('user_phone').value.length != 10){
+    if(everythingElse){div.append( "we need( valid phone number")}
+    else {div.append(", invalid phone number")}
     everythingElse = false;
   }
   if(!document.getElementById('user_message').value){
-    div.append( " ,a message")
+    if(everythingElse){div.append( "we need( a message")}
+    else {div.append( " ,a message")}
     everythingElse = false;
   }
-  div.append(")")
+  if(!everythingElse){div.append(")")}
   //this uses a then function to have it activate after the getDomain function finishes
   getDomains().then((data) =>{
     compared = compareEmails(data)
@@ -79,4 +85,6 @@ function clickFunction(event) {
   })
 }
 
+//this line activates when you click on a button with the id "contact-button"
+//this fires everthing else
 document.getElementById('contact-button').onclick = (e) => clickFunction(e)
