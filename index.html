@@ -16,61 +16,83 @@
     </head>
     <body class = "mainBody">
         <div>
-            <nav class = "bar">
-                <!--this is the start of the dropdown from bootstrap-->
-                <div class="dropdown" style = "align-self: center;">
-                    <button class="btn btn-secondary dropdown-toggle" style ="background-color: #acace6; border-color:black; color:black" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src = "./images/menu.png" alt = "menu" >
-                    </button>
-                    <ul class="dropdown-menu" style = "background-color: #acace6;" aria-labelledby="dropdownMenuButton1">
-                        <li><a class = "dropdown-item" href="https://mattm401.github.io/"> Course-page </a></li>
-                        <li><a class = "dropdown-item" href="https://wenxuanchelsea.github.io"> previous </a></li>
-                        <li><a class = "dropdown-item" href="https://joshualyon7.github.io"> Next </a></li>
-                    </ul>
-                  <!--this is the end of the dropdowm from bootstrap-->
+            <nav class="navbar navbar-expand-lg navbar-light" style = "background-color: #acace6;">
+              <div class="container-fluid">
+                <a class="navbar-brand">Aaron Liu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href=Material.html>Additional Works</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        GitHub
+                      </a>
+                      <ul class="dropdown-menu" style = "background-color: #acace6;"aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="https://github.com/AaronLiu20/planner" target="_blank">Planner</a></li>
+                        <li><a class="dropdown-item" href="https://github.com/jrreap/miniweather" target="_blank">MiniWeather</a></li>
+                        <li><a class="dropdown-item" href="https://github.com/CISC275-S2021/project-team-12-0" target="_blank">Garden</a></li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
+              </div>
             </nav>
         </div>
         
         <div class="card-group" style = "width:90%; margin-left: 5%; padding: 15px;">
             <div class="card">
-              <img class="card-img-top" src="./images/pic-of-me-and-friends.jpeg" alt="Card image cap">
+              <img class="card-img-top" src="./images/me.png" height = "500" alt="Card image cap">
               <div class= "custom-card-center">
-                <h5 class="card-title">Me and my friends</h5>
-                <p class="card-text">Me and my freshmen year friends hanging out at a lake during the pandemic. I am the guy in the blue shirt on the right</p>
               </div>
             </div>
             <div class="card">
-              <img class="card-img-top" src="./images/university.jpg" alt="Card image cap">
               <div class= "custom-card-center">
-                <h5 class="card-title">University</h5>
-                <p class="card-text">I am a unviersity of delaware undergraduate student majoring in computer science concentratiing software engineering</p>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="./images/chainmail.jpeg" alt="Card image cap">
-              <div class= "custom-card-center">
-                <h5 class="card-title">Hobbies</h5>
-                <p class="card-text">I like to do the obvious things like playing games and watching videos. but i also like to making customizable chainmail</p>
+                <h5>Who is Aaron?</h5>
+                <p>With innovations happening at an unprecedented speed, everyone has to stay ahead of the curve or be left behind. 
+                   And in order to stay with the times, there needs to be people willing to both learn and adapt constantly. Coincidentally, these attributes best describe me. 
+                   Growing up in the state of Delaware with Chinese immigrant parents and two older sisters, my whole life is about adapting. 
+                   Whether it is learning English when I'm already fluent in mandarin or being ostracized for being the only asian in my grade leading up to college, all part of the course and it made me how I am today.</p>
+
+                <p>    Originally applying to the University of Delaware to be a civil engineer, I accidentally applied to be a computer science major instead. 
+                   But instead of changing my major, I decided to give it a try and excelled almost instantly. 
+                   Even though I never took a coding class or even properly understood what coding is before college, I now know several languages which includes: Java, Javascript and C to name a few. 
+                   Already taken some Software Algorithms courses and introduction into software engineering, I am primed and ready to help bring in new changes when I graduate. 
+                </p>
               </div>
             </div>
         </div>
         
         <div class = "title">
             <h1 class = "custom-divide-bar">
-                Some Projects and <a href="./images/Short-resume.png"> Resume </a>
+                Current Research and <a href="https://docs.google.com/document/d/1EhTj6KJk9HeAYPyWCRLsPOE65yOeb9-CQRURP6OpV8c/edit" target = "_blank"> Resume </a>
             </h1>
         </div>
 
-        <div>
-            <div class="custom-card-center" style="width: 90%;">
-                <img class="card-img-top" src="./images/calendar.png" alt="Card image cap">
-                <div class="card-body">
-                <h5 class="card-title" style = "text-align: center;">Current Project</h5>
-                <p class="card-text">Another website for your standard calendar. Even thought this project is not the most taxing or complex idea, it helps to reinforce the foundamentals that are needed for the calendar to work properly.</p>
-                <a href="https://aaronliu20.github.io/planner/index.html" class="btn btn-primary">GitHub link</a>
-                </div>
+
+        <div class="card-group" style = "width:90%; margin-left: 5%; padding: 15px;">
+          <div class="card">
+            <img class="card-img-top" height = "500" src="./images/OpenAcc.jpg" alt="Card image cap">
+          </div>
+          <div class="card">
+            <div class= "custom-card-center">
+              <h5 class="card-title" style = "text-align: center;">Validation-suite</h5>
+              <p class="custom-card-text">Being currently employed through the university of Delaware in a research position validating OpenACC code. 
+                                          OpenACC is a coding language that ineracts with both the CPU and the GPU by serving as the bridge between the two parts of the computer.
+                                          This is because when use OpenACC to declare a region of code, it would compile the section of code onto the GPU.
+                                          If this requires data to be moved from the host, CPU, into the GPU, then you declare it initially when you declare the region.
+                                          It is able to accelerate the code since it could run different sections at the same time, parralelly.
+                                          Being able to intregrate OpenAcc into any pre-exiting code, it is widely used in real-world applications to accelerate its performance.</p>
+              <p class="custom-card-text">
+                                          As a reasearcher, I’m testing the functionality of OpenAcc by reading the documentation and implementing it. 
+                                          If the implementation fails in any way, document the errors and return it to Nvidia.
+                                          Projected to stay on the team, I will be reasearch throughout the senior year and the winter/summer breaks </p>
+              <a href="https://github.com/OpenACC/validation-suite" target = "_blank" class="custom-btn-primary">OpennAcc Validation-suite</a>
             </div>
+          </div>
         </div>
         <footer class="bg-light text-center text-lg-start">
             <!-- Copyright -->
